@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :mentees
-
   resources :mentors
+
+  resources :users
 
   root 'mentors#index'
   # The priority is based upon order of creation: first created -> highest priority.
