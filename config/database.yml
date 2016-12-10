@@ -1,19 +1,26 @@
-default: &default
-    adapter: postgresql
-    encoding: unicode
-    pool: 5
-    username: postgres
-    password: password
-    host: localhost
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: mentormatch_development
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
 
-  development:
-    <<: *default
-    database: mentormatch_development
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: mentormatch_test
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
 
-  test:
-    <<: *default
-    database: mentormatch_test
-
-  production:
-    <<: *default
-    database: mentormatch_production
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: mentormatch_production
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
