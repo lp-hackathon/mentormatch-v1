@@ -1,0 +1,2 @@
+module MentoRsHelper
+end
